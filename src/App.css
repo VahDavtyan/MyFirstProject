@@ -1,0 +1,53 @@
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}  */
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.links {
+  color: white;
+  font-Family: 'Montserrat';
+  transition-duration: 0.3s;
+  
+}
+
+
+
+.links:hover {
+  color: rgb(170, 171, 184);
+  display: inline-block;
+  text-decoration: none;
+  
+
+}
+
+.App-logo {
+  width: 5vmin 
+}
+
+.App {
+  text-align: center;
+  margin: 100px;
+}
+
+
