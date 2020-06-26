@@ -1,29 +1,23 @@
-import React from 'react';
-import './App.css';
-import Header from './Components/Header';
-import ToDoList from './Components/ToDoList';
-import FormList from './Components/FormList';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import NavBar from './Components/NavBar';
+import React from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from "./Components/NavBar";
 
 export default function App() {
   return (
     <div>
-      <NavBar />
-      <Route>
+      <Router>
+        <NavBar />
         <Switch>
-          <Route path="/ToDoList">
-            <ToDoList />
-          </Route>
-          <Route path="/FormList">
-            <FormList />
-          </Route>
-          <Routecle path="/">
+          <Route path="/HouseholdGoods"></Route>
+          <Route path="/FormList"></Route>
+          <Route path="/">
             <Header />
-          </Routecle>
+          </Route>
         </Switch>
-      </Route>
+      </Router>
     </div>
   );
 }
